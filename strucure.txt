@@ -15,6 +15,16 @@ drwxr-xr-x 7 root root   4096 Oct 26 14:57 .git/
 drwxr-xr-x 2 root root   4096 Oct 26 16:18 public/
 -rw-r--r-- 1 root root    127 Oct 26 14:57 requirements.txt
 -rw-r--r-- 1 root root 206512 Oct 26 16:01 structure.txt
+root@dc:~/srinu/pdf_edit# cat .env
+GITHUB_TOKEN=xxxxxxxxxxxxxxxxx
+GITHUB_REPO=Srinuas/photo-storage
+GITHUB_BRANCH=main
+
+ADMIN_PIN=1234
+VAULT_PIN=4321
+SECRET_KEY=my_super_secret_key
+
+
 root@dc:~/srinu/pdf_edit# tree .
 .
 ├── Dockerfile
