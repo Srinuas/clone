@@ -32,11 +32,14 @@ pdf_edit
 ├── Dockerfile
 ├── Jenkinsfile
 └── jd.sh
+```
 
 Quick Start (Docker)
 You can build and deploy the application using the included deployment script:
+```bash
 chmod +x jd.sh
 ./jd.sh
+```
 
 Or manually using Docker:
 docker build -t srinuas/pdfrepo:latest .
