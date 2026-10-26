@@ -9,8 +9,39 @@ drwxr-xr-x 7 root root 4096 Oct 26 20:09 .git/
 -rw-r--r-- 1 root root 3839 Oct 26 20:09 app.py
 -rw-r--r-- 1 root root  816 Oct 26 20:09 deploy_image.sh
 -rw-r--r-- 1 root root  319 Oct 26 20:09 docker-compose.yml
-drwxr-xr-x 2 root root 4096 Oct 26 20:14 public/
+drwxr-xr-x 2 root root 4096 Oct 26 20:22 public/
 -rw-r--r-- 1 root root   29 Oct 26 20:09 requirements.txt
+root@dc:~/srinu/pdf_edit# ll public/
+total 844
+drwxr-xr-x 2 root root   4096 Oct 26 20:22 ./
+drwxr-xr-x 4 root root   4096 Oct 26 20:17 ../
+-rw-r--r-- 1 root root 317942 Oct 26 20:14 bg_img_1.jpg
+-rw-r--r-- 1 root root 306214 Oct 26 20:14 bg_img_2.jpg
+-rw-r--r-- 1 root root  14704 Oct 26 20:14 bg_img_3.jpg
+-rw-r--r-- 1 root root  98284 Oct 26 20:14 bg_img_4.jpg
+-rw-r--r-- 1 root root  28793 Oct 26 20:14 favicon.jpg
+-rw-r--r-- 1 root root  25396 Oct 26 20:14 index.html
+-rw-r--r-- 1 root root  30252 Oct 26 20:14 script.js
+-rw-r--r-- 1 root root  19543 Oct 26 20:14 style.css
+root@dc:~/srinu/pdf_edit# tree .
+.
+├── Dockerfile
+├── app.py
+├── deploy_image.sh
+├── docker-compose.yml
+├── public
+│   ├── bg_img_1.jpg
+│   ├── bg_img_2.jpg
+│   ├── bg_img_3.jpg
+│   ├── bg_img_4.jpg
+│   ├── favicon.jpg
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+└── requirements.txt
+
+2 directories, 13 files
+root@dc:~/srinu/pdf_edit# 
 root@dc:~/srinu/pdf_edit# cat .env
 GITHUB_TOKEN=xxx
 GITHUB_REPO=Srinuas/photo-storage
@@ -22,43 +53,6 @@ SECRET_KEY=my_super_secret_key
 
 root@dc:~/srinu/pdf_edit# ll
 total 44
-drwxr-xr-x 4 root root 4096 Oct 26 20:17 ./
-drwxr-xr-x 3 root root 4096 Oct 26 19:33 ../
--rw-r--r-- 1 root root  223 Oct 26 20:17 .env
--rw-r--r-- 1 root root  277 Oct 26 20:17 .env.gpg
-drwxr-xr-x 7 root root 4096 Oct 26 20:09 .git/
--rw-r--r-- 1 root root  189 Oct 26 20:09 Dockerfile
--rw-r--r-- 1 root root 3839 Oct 26 20:09 app.py
--rw-r--r-- 1 root root  816 Oct 26 20:09 deploy_image.sh
--rw-r--r-- 1 root root  319 Oct 26 20:09 docker-compose.yml
-drwxr-xr-x 2 root root 4096 Oct 26 20:14 public/
--rw-r--r-- 1 root root   29 Oct 26 20:09 requirements.txt
-root@dc:~/srinu/pdf_edit# ll
-total 44
-drwxr-xr-x 4 root root 4096 Oct 26 20:17 ./
-drwxr-xr-x 3 root root 4096 Oct 26 19:33 ../
--rw-r--r-- 1 root root  223 Oct 26 20:17 .env
--rw-r--r-- 1 root root  277 Oct 26 20:17 .env.gpg
-drwxr-xr-x 7 root root 4096 Oct 26 20:09 .git/
--rw-r--r-- 1 root root  189 Oct 26 20:09 Dockerfile
--rw-r--r-- 1 root root 3839 Oct 26 20:09 app.py
--rw-r--r-- 1 root root  816 Oct 26 20:09 deploy_image.sh
--rw-r--r-- 1 root root  319 Oct 26 20:09 docker-compose.yml
-drwxr-xr-x 2 root root 4096 Oct 26 20:14 public/
--rw-r--r-- 1 root root   29 Oct 26 20:09 requirements.txt
-root@dc:~/srinu/pdf_edit# ll public/
-total 2148
-drwxr-xr-x 2 root root    4096 Oct 26 20:14 ./
-drwxr-xr-x 4 root root    4096 Oct 26 20:17 ../
--rw-r--r-- 1 root root 1333017 Oct 26 20:09 bg.jpg
--rw-r--r-- 1 root root  317942 Oct 26 20:14 bg_img_1.jpg
--rw-r--r-- 1 root root  306214 Oct 26 20:14 bg_img_2.jpg
--rw-r--r-- 1 root root   14704 Oct 26 20:14 bg_img_3.jpg
--rw-r--r-- 1 root root   98284 Oct 26 20:14 bg_img_4.jpg
--rw-r--r-- 1 root root   28793 Oct 26 20:14 favicon.jpg
--rw-r--r-- 1 root root   25396 Oct 26 20:14 index.html
--rw-r--r-- 1 root root   30252 Oct 26 20:14 script.js
--rw-r--r-- 1 root root   19543 Oct 26 20:14 style.css
 root@dc:~/srinu/pdf_edit# tree .
 .
 ├── Dockerfile
