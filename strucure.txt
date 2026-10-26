@@ -7015,3 +7015,34 @@ echo "${IMAGE_NAME}"
 
 echo "======================================"
 root@dc:~/srinu/pdf_edit# 
+
+
+
+change my strucure to 
+
+pdf_edit
+│
+├── app.py
+├── .env
+├── .gitignore
+├── .dockerignore
+├── requirements.txt
+│
+├── services
+│   ├── pdf_service.py
+│   ├── image_service.py
+│   ├── github_service.py
+│   └── session_service.py
+│
+├── public
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│   └── assets
+│
+├── Dockerfile
+├── Jenkinsfile
+└── jd.sh
+
+use my prompt here
+"here is my structure, add git ignore, docker ignore, multistage dockerfile for light weight image, change ui layout and optimize the app, remember this is another branch like main9, remove navigation and add navigation for webpage navigation that will in toggle to move anyposition, transparancy to 30%, when operating only transparant to 60%, optimize entire code with .env file and make sure changes are required for entire file changes"
